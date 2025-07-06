@@ -7,11 +7,11 @@ configuration {
     display-window: " ";
     drun-display-format: "{name}";
     window-format: "{w}{t}";
-    font: "JetBrainsMono Nerd Font 10";
+    font: "MonaspiceXe Nerd Font 10";
     icon-theme: "Kora";
 }
 
-@theme "~/dotfiles/.config/rofi/rose-pine.rasi"
+@theme ".config/rofi/themes/Urban-Nocturne.rasi"
 
 // Main //
 window {
@@ -36,7 +36,7 @@ mainbox {
     orientation:                vertical;
     children:                   ["inputbar", "dummybox"];
     background-color:           transparent;
-    background-image:           url("~/dotfiles/wallpapers/rose_pine_contourline_blurred.png");
+    background-image:           url("~/.dotfiles/wallpapers/wallpaper_1.jpg");
     border-radius:              1.5em;
 }
 
