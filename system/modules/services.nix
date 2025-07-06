@@ -29,5 +29,10 @@
         };
 
         libinput.enable = true;
+
+        logind = {
+            powerKey = "ignore";
+            powerKeyLongPress = "poweroff";
+        };
     };
 }
