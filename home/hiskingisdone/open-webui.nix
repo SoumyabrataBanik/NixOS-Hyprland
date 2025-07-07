@@ -25,10 +25,9 @@
                 description = "The port for Open Webui to listen on.";
             };
         };
-
-        networking.firewall.allowedTCPPorts = lib.mkIf config.networking.firewall.enable [ cfg.port ];
-
+ 
         config = lib.mkIf cfg.enable {
+            
             systemd.user.services.open-webui = {
                 Unit = {
                     Description = "Open Webui User Service (Home Manager)";
@@ -40,13 +39,13 @@
                     ExecStart = ''
                         ${pkgs.steam-run}/bin/steam-run sh -c " \
                         export DATA_DIR=${cfg.dataDir} && \
-                        ${pkgs.uv-unwrapped}/bin/uvx --python 3.11 open-webui@latest serve --host ${cfg.host} --port ${toString cfg.port} \
+                        ${pkgs.uv}/bin/uvx --python 3.11 open-webui@latest serve --host ${cfg.host} --port ${toString cfg.port} \
                         "
                     '';
                 };
-                Install = {
-                    WantedBy = [ "default.target" ];
-                };
+                #Install = {
+                #    WantedBy = [ "default.target" ];
+                #};
             };
         };
 }

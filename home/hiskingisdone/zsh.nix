@@ -7,10 +7,16 @@
             ll="eza -lha --icons=auto --sort=name --group-directories-first"; 
             ld="eza -lhD --icons=auto"; 
             lt="eza --icons=auto --tree";
-
+            
+            # System Upgrade
             rebuild = "sudo nixos-rebuild switch --flake ~/.dotfiles";
             homeRebuild = "home-manager switch --flake ~/.dotfiles";
             fullRebuild = "sudo nixos-rebuild switch --flake ~/.dotfiles && home-manager switch --flake ~/.dotfiles";
+
+            # Open-Webui
+            webui-start = "systemctl --user start open-webui";
+            webui-stop = "systemctl --user stop open-webui";
+            webui-status = "systemctl --user status open-webui";
         };
     in
 {

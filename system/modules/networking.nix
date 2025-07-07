@@ -7,7 +7,10 @@
 
         networkmanager.enable = true;
 
-        firewall.enable = true;
+        firewall = {
+            enable = true;
+            allowedTCPPorts = [ 8080 ];
+        };
 
     };
 }
