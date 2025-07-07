@@ -24,6 +24,7 @@
               url = "github:0xc000022070/zen-browser-flake";
               inputs.nixpkgs.follows = "nixpkgs";
           };
+
     };
 
     outputs = { self, nixpkgs, nixpkgs-unstable, home-manager, ... }@inputs:
@@ -31,7 +32,7 @@
             lib = nixpkgs.lib;
             system = "x86_64-linux";
             pkgs = nixpkgs.legacyPackages.${system};
-            pkgs-unstable = nixpkgs.legacyPackages.${system};
+            pkgs-unstable = nixpkgs-unstable.legacyPackages.${system};
         in
     {
             nixosConfigurations.nixstar = lib.nixosSystem {

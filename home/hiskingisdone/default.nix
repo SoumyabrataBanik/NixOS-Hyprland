@@ -8,7 +8,6 @@
         ./git.nix
         ./gtk.nix
         ./languages.nix
-        ./open-webui.nix
         ./programs.nix
         ./services.nix
         ./zsh.nix

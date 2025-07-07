@@ -21,9 +21,10 @@
         ripgrep
         tldr
         unzip
-	      tmux
-	      zathura
+	    tmux
+	    zathura
         bluez
         blueman
+        poetry
     ];
 }
