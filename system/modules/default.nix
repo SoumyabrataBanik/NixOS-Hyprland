@@ -2,7 +2,6 @@
 
 {
     imports = [
-        ./autocpufreq.nix
         ./boot.nix
         ./hardware.nix
         ./hyprland.nix
