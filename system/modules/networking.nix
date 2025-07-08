@@ -6,7 +6,7 @@
         hostName = "nixstar";
 
         networkmanager.enable = true;
-
-        firewall.enable = true;
+        
+        firewall.enable = false;
     };
 }

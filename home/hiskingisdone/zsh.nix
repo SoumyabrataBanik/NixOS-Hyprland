@@ -14,9 +14,9 @@
             fullRebuild = "sudo nixos-rebuild switch --flake ~/.dotfiles && home-manager switch --flake ~/.dotfiles";
 
             # Open-Webui
-            webui-start = "systemctl --user start open-webui";
-            webui-stop = "systemctl --user stop open-webui";
-            webui-status = "systemctl --user status open-webui";
+            start-webui = "sudo systemctl start podman-open-webui.service";
+            stop-webui = "sudo systemctl stop podman-open-webui.service";
+            status-webui = "sudo systemctl status podman-open-webui.service";
         };
     in
 {

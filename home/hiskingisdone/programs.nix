@@ -11,6 +11,5 @@
 
         zen-browser.enable = true;
 
-        open-webui.enable = true;
     };
 }
