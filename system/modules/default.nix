@@ -8,6 +8,7 @@
         ./internationalization.nix
         ./networking.nix
         ./nixsettings.nix
+        ./open-webui.nix
         ./packages.nix
         ./programs.nix
         ./security.nix
