@@ -22,7 +22,9 @@
                 
                 FLAKE_DIR=/home/hiskingisdone/.dotfiles
 
+                echo
                 echo "<------------STARTING THE UPGRADE PROCESS------------>"
+                echo
 
                 echo "> Switching to '$FLAKE_DIR'..."
                 cd "$FLAKE_DIR"
@@ -40,8 +42,8 @@
                     exit 0
                 fi
 
-                echo "> The Following inputs have been updated:"
-                git diff --stat flake.lock
+                #echo "> The Following inputs have been updated:"
+                #git diff --stat flake.lock
 
                 echo
                 read -p "Do you want to proceed with the system rebuild? (y/N) " -n 1 -r REPLY
@@ -59,7 +61,7 @@
                 esac
 
                 echo "> Rebuilding the system..."
-                sudo nixos-rebuild switch --flake .
+                sudo nixos-rebuild switch --flake . && home-manager switch --flake .
 
                 current_generation=$(nixos-rebuild list-generations | grep "(current)" | awk '{print $1}')
 
@@ -68,6 +70,12 @@
                 git commit -m "chore: update flake inputs (generation $current_generation)"
 
                 echo " 󰄲 System upgrade complete and committed!"
+
+                echo
+                echo "Moving back to previous directory!"
+                echo
+
+                cd -
             '';
         };
     };
