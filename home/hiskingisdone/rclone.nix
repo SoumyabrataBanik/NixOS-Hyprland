@@ -1,11 +1,9 @@
-{ config, pkgs, ... }
+{ self, config, pkgs, ... }:
     let
-        rcloneConfigFile = ../secrets/rclone/rclone.conf;
+        rcloneConfigFile = config.sops.secrets.rclone-conf;
     in
 {
     programs.rclone.enable = true;
-
-    home.file.".config/rclone/rclone.conf".source = rcloneConfigFile;
 
     systemd.user.services.rclone-gdrive = {
         Unit = {
@@ -22,7 +20,7 @@
                 ${pkgs.rclone}/bin/rclone mount \
                     --vfs-cache-mode writes \
                     --dir-cache-time 1m \
-                    --network-mode=auto \
+                    --network-mode \
                     --fast-list \
                 gdrive: ${config.home.homeDirectory}/gdrive
             '';

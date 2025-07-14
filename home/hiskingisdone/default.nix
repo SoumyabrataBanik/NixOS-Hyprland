@@ -11,6 +11,7 @@
         ./programs.nix
         ./rclone.nix
         ./services.nix
+        ./sops-nix.nix
         ./zsh.nix
     ];
 

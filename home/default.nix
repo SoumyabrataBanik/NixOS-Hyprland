@@ -4,6 +4,7 @@
     imports = [
         ./hiskingisdone
         ./scripts
+        inputs.sops-nix.homeManagerModules.sops
     ];
 
     home.username = "hiskingisdone";

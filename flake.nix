@@ -25,9 +25,15 @@
               inputs.nixpkgs.follows = "nixpkgs";
           };
 
+          # Sops-Nix
+          sops-nix = {
+              url = "github:Mic92/sops-nix";
+              inputs.nixpkgs.follows = "nixpkgs";
+          };
+
     };
 
-    outputs = { self, nixpkgs, nixpkgs-unstable, home-manager, ... }@inputs:
+    outputs = { self, nixpkgs, nixpkgs-unstable, home-manager, sops-nix, ... }@inputs:
         let
             lib = nixpkgs.lib;
             system = "x86_64-linux";
