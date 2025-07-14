@@ -9,6 +9,7 @@
         ./gtk.nix
         ./languages.nix
         ./programs.nix
+        ./rclone.nix
         ./services.nix
         ./zsh.nix
     ];

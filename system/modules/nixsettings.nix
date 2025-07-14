@@ -9,7 +9,7 @@
         settings = {
             experimental-features = [ "nix-command" "flakes" ];
 
-            auto-optimize-store = true;
+            auto-optimise-store = true;
         };
 
         gc = {
