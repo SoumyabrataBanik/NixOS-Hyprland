@@ -8,6 +8,8 @@
     nix = {
         settings = {
             experimental-features = [ "nix-command" "flakes" ];
+
+            auto-optimize-store = true;
         };
 
         gc = {
