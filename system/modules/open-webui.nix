@@ -6,7 +6,7 @@
     config = lib.mkIf config.services.open-webui-vir.enable {
         virtualisation.oci-containers.containers = {
             open-webui = {
-                image = "ghcr.io/open-webui/open-webui:main";
+                image = "ghcr.io/open-webui/open-webui:git-2470da8";
                 ports = [ "3000:8080" ];
                 volumes = [
                     "${config.users.users.hiskingisdone.home}/.open-webui:/app/backend/data"
