@@ -20,12 +20,18 @@
         xdg-desktop-portal
         xdg-desktop-portal-gtk
         xdg-desktop-portal-wlr
+        swaynotificationcenter
     ];
 
     programs = {
         hyprland = {
             enable = true;
             xwayland.enable = true;
+        };
+
+        thunar = {
+            enable = true;
+            plugins = with pkgs.xfce; [ thunar-volman ];
         };
     };
 

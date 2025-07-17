@@ -9,6 +9,7 @@
         firefox
         neovim
         kitty
+        alacritty
         fzf
         eza
         yazi
