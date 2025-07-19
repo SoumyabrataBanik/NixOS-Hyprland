@@ -1,9 +1,9 @@
 import = [
-    "~/dotfiles/.config/alacritty/avengers.toml"
+    "~/dotfiles/.config/alacritty/dracula.toml"
 ]
 
 [shell]
-program = "/bin/zsh"
+program = "/usr/bin/env zsh"
 
 [window]
 padding = { x = 10, y = 10 }
@@ -13,7 +13,7 @@ blur = true
 
 [font]
 size = 12
-normal = { family = "BerkeleyMono Nerd Font Mono", style = "Regular"}
-bold = { family = "BerkeleyMono Nerd Font Mono", style = "Bold"}
-italic = { family = "BerkeleyMono Nerd Font Mono", style = "Italic"}
-bold_italic = { family = "BerkeleyMono Nerd Font Mono", style = "Bold Italic"}
+normal = { family = "MonaspiceXe Nerd Font Mono", style = "Regular"}
+bold = { family = "MonaspiceXe Nerd Font Mono", style = "Bold"}
+italic = { family = "MonaspiceXe Nerd Font Mono", style = "Italic"}
+bold_italic = { family = "MonaspiceXe Nerd Font Mono", style = "Bold Italic"}

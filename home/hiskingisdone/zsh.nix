@@ -42,8 +42,6 @@
             shellAliases = myAliases;
             initContent = ''
                 eval "$(starship init zsh)"
-
-                fastfetch
             '';
         };
     };  

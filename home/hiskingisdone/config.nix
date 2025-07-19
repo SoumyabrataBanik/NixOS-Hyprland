@@ -3,6 +3,7 @@ let
 in
 {
 	home.file = {
+        ".config/alacritty".source = "${configDir}/alacritty";
 	    ".config/nvim".source = "${configDir}/nvim";
     	".config/kitty".source = "${configDir}/kitty";
 	    ".config/hypr".source = "${configDir}/hypr";
