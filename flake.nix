@@ -14,14 +14,8 @@
           };
 
           # Hyprland
-         hyprland = {
+          hyprland = {
               url = "github:hyprwm/Hyprland";
-              inputs.nixpkgs.follows = "nixpkgs";
-          };
-
-          # Zen Browser
-          zen-browser = {
-              url = "github:0xc000022070/zen-browser-flake";
               inputs.nixpkgs.follows = "nixpkgs";
           };
 
@@ -30,9 +24,15 @@
               url = "github:Mic92/sops-nix";
               inputs.nixpkgs.follows = "nixpkgs";
           };
+
+          # Zen-Browser
+          zen-browser = {
+              url = "github:SoumyabrataBanik/flake-zen-browser";
+              inputs.nixpkgs.follows = "nixpkgs";
+          };
     };
 
-    outputs = { self, nixpkgs, nixpkgs-unstable, home-manager, sops-nix, ... }@inputs:
+    outputs = { self, nixpkgs, nixpkgs-unstable, home-manager, sops-nix, zen-browser, ... }@inputs:
         let
             lib = nixpkgs.lib;
             system = "x86_64-linux";
@@ -44,6 +44,14 @@
                 inherit system;
                 modules = [
                     ./system/configuration.nix
+
+                    ({ pkgs, ... }: {
+                        nixpkgs.overlays = [
+                            (final: prev: {
+                                zen-browser = zen-browser.packages.${prev.system}.zen-browser;
+                            })
+                        ];
+                    })
                 ];
                 specialArgs = {
                     inherit pkgs-unstable;

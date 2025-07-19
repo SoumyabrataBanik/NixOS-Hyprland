@@ -7,6 +7,7 @@
         wget
         git
         firefox
+        zen-browser
         neovim
         kitty
         alacritty

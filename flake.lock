@@ -92,27 +92,6 @@
         "type": "github"
       }
     },
-    "home-manager_2": {
-      "inputs": {
-        "nixpkgs": [
-          "zen-browser",
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1752603129,
-        "narHash": "sha256-S+wmHhwNQ5Ru689L2Gu8n1OD6s9eU9n9mD827JNR+kw=",
-        "owner": "nix-community",
-        "repo": "home-manager",
-        "rev": "e8c19a3cec2814c754f031ab3ae7316b64da085b",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nix-community",
-        "repo": "home-manager",
-        "type": "github"
-      }
-    },
     "hyprcursor": {
       "inputs": {
         "hyprlang": [
@@ -516,22 +495,21 @@
     },
     "zen-browser": {
       "inputs": {
-        "home-manager": "home-manager_2",
         "nixpkgs": [
           "nixpkgs"
         ]
       },
       "locked": {
-        "lastModified": 1752758254,
-        "narHash": "sha256-VP+f1kJmTsJW+62HtJRZw/luhKHaT06lByAI3/6dXSQ=",
-        "owner": "0xc000022070",
-        "repo": "zen-browser-flake",
-        "rev": "9aa65a267cba3e8334e3af8ec005e75d9c391bbe",
+        "lastModified": 1752915113,
+        "narHash": "sha256-DawLfs7BBqvsc/maKvoy/t9PjUqJedo+EI6nLlexNU4=",
+        "owner": "SoumyabrataBanik",
+        "repo": "flake-zen-browser",
+        "rev": "0a66e5bb0ac2490ee0e977803f19304b61c6c4db",
         "type": "github"
       },
       "original": {
-        "owner": "0xc000022070",
-        "repo": "zen-browser-flake",
+        "owner": "SoumyabrataBanik",
+        "repo": "flake-zen-browser",
         "type": "github"
       }
     }
