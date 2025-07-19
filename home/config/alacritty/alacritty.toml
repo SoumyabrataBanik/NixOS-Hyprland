@@ -1,9 +1,8 @@
-import = [
-    "~/dotfiles/.config/alacritty/dracula.toml"
-]
+[general]
+import = "themes/dracula.toml"
 
-[shell]
-program = "/usr/bin/env zsh"
+[terminal]
+shell = "zsh"
 
 [window]
 padding = { x = 10, y = 10 }
