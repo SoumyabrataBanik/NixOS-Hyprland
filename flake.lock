@@ -384,6 +384,26 @@
         "type": "indirect"
       }
     },
+    "open-webui": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1753098883,
+        "narHash": "sha256-QiIVzfLFt8D9e77xd5oiNawx3hLOZf3JrT0jQGLzSEg=",
+        "owner": "SoumyabrataBanik",
+        "repo": "open-webui-flake",
+        "rev": "2ec8dd8c49d61427fa3e6b2e58a1aec2123e8704",
+        "type": "github"
+      },
+      "original": {
+        "owner": "SoumyabrataBanik",
+        "repo": "open-webui-flake",
+        "type": "github"
+      }
+    },
     "pre-commit-hooks": {
       "inputs": {
         "flake-compat": "flake-compat",
@@ -413,6 +433,7 @@
         "hyprland": "hyprland",
         "nixpkgs": "nixpkgs",
         "nixpkgs-unstable": "nixpkgs-unstable",
+        "open-webui": "open-webui",
         "sops-nix": "sops-nix",
         "zen-browser": "zen-browser"
       }

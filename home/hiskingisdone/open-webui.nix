@@ -6,6 +6,6 @@
     ];
 
     programs.zsh.shellAliases = {
-        ow = "${pkgs.open-webui}/bin/open-webui serve --port 3000"
+        ow = "${pkgs.open-webui}/bin/open-webui serve --port 3000";
     };
 }

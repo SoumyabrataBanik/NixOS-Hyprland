@@ -8,9 +8,6 @@
         git
         firefox
         zen-browser
-        neovim
-        kitty
-        alacritty
         fzf
         eza
         yazi
@@ -24,13 +21,5 @@
         tldr
         unzip
 	    tmux
-        bluez
-        blueman
-    ];
-
-    environment.systemPackages = with pkgs-unstable; [
-        ghostty-bin
-        onlyoffice-desktopeditors
-	    zathura
     ];
 }

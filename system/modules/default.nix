@@ -9,10 +9,10 @@
         ./networking.nix
         ./nixsettings.nix
         ./open-webui.nix
-        ./packages.nix
         ./programs.nix
         ./security.nix
         ./services.nix
+        ./stable-packages.nix
         ./time.nix
         ./users.nix
         ./zsh.nix
