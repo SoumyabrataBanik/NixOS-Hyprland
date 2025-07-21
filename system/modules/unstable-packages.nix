@@ -1,10 +1,14 @@
+{ pkgs-unstable, ... }:
+
+{
 environment.systemPackages = with pkgs-unstable; [
     kitty
     alacritty
     neovim
     bluez
     blueman
-    ghostty-bin
+    ghostty
     onlyoffice-desktopeditors
     zathura
 ];
+}

@@ -33,11 +33,10 @@
         # Open-Webui
         open-webui = {
             url = "github:SoumyabrataBanik/open-webui-flake";
-            inputs.nixpkgs.follows = "nixpkgs";
         };
     };
 
-    outputs = { self, nixpkgs, nixpkgs-unstable, home-manager, ... }@inputs:
+    outputs = { self, nixpkgs, nixpkgs-unstable, home-manager, sops-nix, ... }@inputs:
         let
             lib = nixpkgs.lib;
             system = "x86_64-linux";
