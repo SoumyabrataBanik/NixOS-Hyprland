@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, pkgs-unstable, ... }:
 
 {
     
@@ -24,10 +24,13 @@
         tldr
         unzip
 	    tmux
-	    zathura
         bluez
         blueman
-        poetry
+    ];
+
+    environment.systemPackages = with pkgs-unstable; [
+        ghostty-bin
         onlyoffice-desktopeditors
+	    zathura
     ];
 }
