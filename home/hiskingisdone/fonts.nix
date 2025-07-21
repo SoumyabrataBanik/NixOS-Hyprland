@@ -13,6 +13,7 @@
             nerd-fonts.iosevka
             nerd-fonts.iosevka-term
             nerd-fonts.iosevka-term-slab
+            nerd-fonts.recursive-mono
             font-awesome
             powerline-fonts
             corefonts
