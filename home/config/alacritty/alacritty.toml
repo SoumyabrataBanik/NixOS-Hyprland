@@ -1,5 +1,7 @@
 [general]
-import = "themes/dracula.toml"
+import = [
+    "themes/dracula.toml"
+]
 
 [terminal]
 shell = "zsh"
@@ -12,7 +14,7 @@ blur = true
 
 [font]
 size = 12
-normal = { family = "MonaspiceXe Nerd Font Mono", style = "Regular"}
-bold = { family = "MonaspiceXe Nerd Font Mono", style = "Bold"}
-italic = { family = "MonaspiceXe Nerd Font Mono", style = "Italic"}
-bold_italic = { family = "MonaspiceXe Nerd Font Mono", style = "Bold Italic"}
+normal = { family = "RecMonoLinear Nerd Font", style = "Regular"}
+bold = { family = "RecMonoLinear Nerd Font", style = "Bold"}
+italic = { family = "RecMonoLinear Nerd Font", style = "Italic"}
+bold_italic = { family = "RecMonoLinear Nerd Font", style = "Bold Italic"}
