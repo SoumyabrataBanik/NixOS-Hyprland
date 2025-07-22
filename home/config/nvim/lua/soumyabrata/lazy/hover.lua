@@ -8,7 +8,7 @@ return {
 			end,
 		})
 
-		--keymaps
+        -- Keymaps
 		vim.keymap.set("n", "K", require("hover").hover, { desc = "hover.nvim" })
 	end,
 }

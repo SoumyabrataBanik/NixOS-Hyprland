@@ -8,6 +8,7 @@
         ./git.nix
         ./gtk.nix
         ./languages.nix
+        ./neovim.nix
         ./open-webui.nix
         ./programs.nix
         ./rclone.nix
