@@ -2,8 +2,6 @@
 
 {
 
-    services.open-webui-vir.enable = true;
-
     services = {
         
         dbus.enable = true;
