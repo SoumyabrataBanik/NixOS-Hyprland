@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, pkgs-unstable, ... }:
 
 {
 
@@ -7,18 +7,18 @@
     enable = true;
 
     cursorTheme = {
-      name = "Vimix Cursors - White";
-      package = pkgs.vimix-cursors;
+      name = "Simp1e-Mix-Light";
+      package = pkgs-unstable.simp1e-cursors;
     };
 
     theme = {
       name = "Dracula";
-      package = pkgs.dracula-theme;
+      package = pkgs-unstable.dracula-theme;
     };
 
     iconTheme = {
       name = "Papirus-Dark";
-      package = pkgs.papirus-folders;
+      package = pkgs-unstable.papirus-folders;
     };
 
     gtk3.extraConfig = {

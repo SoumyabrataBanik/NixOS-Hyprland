@@ -44,6 +44,7 @@ in
       lazy-nvim
       lualine-nvim
       nvim-treesitter.withAllGrammars
+      trouble-nvim
     ];
 
     extraPackages = with pkgs-unstable; [

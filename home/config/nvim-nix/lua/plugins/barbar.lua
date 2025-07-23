@@ -64,7 +64,7 @@ require("barbar").setup({
 -- =======================================================
 
 -- Define the options table once for reuse.
-local opts = { noremap = true, silent = true }
+-- local opts = { noremap = true, silent = true }
 
 -- Keymaps that do not need special options
 vim.keymap.set("n", "<Space>C", vim.cmd.BufferClose, { desc = "Close current buffer" })

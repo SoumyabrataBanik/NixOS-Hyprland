@@ -127,18 +127,6 @@ cmp.setup({
 -- ===================================================================
 --  Keymaps and UI
 -- ===================================================================
--- General diagnostic appearance
-vim.diagnostic.config({
-	underline = true,
-	virtual_text = false,
-	signs = true,
-	float = {
-		focusable = false,
-		style = "minimal",
-		border = "rounded",
-		source = "always",
-	},
-})
 
 -- Keymaps that should be set when an LSP attaches to a buffer
 vim.api.nvim_create_autocmd("LspAttach", {

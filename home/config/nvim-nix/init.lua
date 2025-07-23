@@ -4,6 +4,7 @@ require("core.autocmds")
 
 require("plugins.colors")
 require("plugins.lsp")
+require("plugins.diagnostics")
 
 require("plugins.barbar")
 require("plugins.colorize")
@@ -17,3 +18,4 @@ require("plugins.snippets")
 require("plugins.telescope")
 require("plugins.treesitter")
 require("plugins.undotree")
+require("plugins.trouble")
