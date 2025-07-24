@@ -3,4 +3,4 @@
 mkdir -p /tmp/lockscreen/
 rm -rf /tmp/lockscreen/*
 hyprshot -f 1.png -o /tmp/lockscreen -m window -m active
-hyprlock
+systemctl suspend && hyprlock

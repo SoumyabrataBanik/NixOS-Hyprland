@@ -4,7 +4,10 @@
 
     text = ''
       mkdir -p /tmp/lockscreen
-      hyprshot -f 1.png -o /tmp/lockscreen/ -m active
+      rm -rf /tmp/lockscreen/*
+      sleep 0.1
+      hyprshot -s -f 1.png -o /tmp/lockscreen/ -m output -m eDP-1
+      sleep 0.5
       hyprlock
     '';
   };

@@ -4,7 +4,7 @@
   imports = [
     ./nix-update.nix
     ./reload-waybar.nix
-    ./screenlock.nix
+    ./screenlocking.nix
     ./toggle-waybar.nix
   ];
 }

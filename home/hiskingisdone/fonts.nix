@@ -10,7 +10,6 @@ let
     nerd-fonts.fira-code
     nerd-fonts.zed-mono
     nerd-fonts.victor-mono
-    nerd-fonts.space-mono
     nerd-fonts.monaspace
     nerd-fonts.meslo-lg
     nerd-fonts.jetbrains-mono
@@ -20,6 +19,7 @@ let
     nerd-fonts.iosevka-term-slab
     nerd-fonts.recursive-mono
     nerd-fonts.blex-mono
+    nerd-fonts._0xproto
     font-awesome
     powerline-fonts
     corefonts

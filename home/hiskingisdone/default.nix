@@ -1,10 +1,11 @@
-{ inputs, ... }:
+{ ... }:
 
 {
   imports = [
     ./config.nix
     ./environment.nix
     ./fonts.nix
+    ./ghostty.nix
     ./git.nix
     ./gtk.nix
     ./neovim.nix

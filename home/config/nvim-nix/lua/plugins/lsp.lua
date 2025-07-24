@@ -48,7 +48,7 @@ for _, server in ipairs(servers) do
 		}
 	elseif server == "emmet_ls" then
 		server_opts.filetypes = { "css", "html", "javascript", "typescriptreact", "javascriptreact" }
-	elseif server == "tsserver" then
+	elseif server == "ts_ls" then
 		server_opts.commands = {
 			OrganizeImports = {
 				function()
@@ -60,6 +60,16 @@ for _, server in ipairs(servers) do
 					vim.lsp.buf.execute_command(params)
 				end,
 				description = "Organize Imports",
+			},
+		}
+	elseif server == "nil_ls" then
+		server_opts.settings = {
+			settings = {
+				["nil"] = {
+					formatting = {
+						command = { "nixfmt" },
+					},
+				},
 			},
 		}
 	end
