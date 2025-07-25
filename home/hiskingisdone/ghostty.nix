@@ -29,6 +29,7 @@
         "ctrl+4=goto_tab:4"
         "ctrl+5=goto_tab:5"
       ];
+      confirm-close-surface = false;
     };
   };
 }

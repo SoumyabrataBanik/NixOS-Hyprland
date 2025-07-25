@@ -14,6 +14,7 @@
     ./rclone.nix
     ./services.nix
     ./sops-nix.nix
+    ./tmux.nix
     ./zsh.nix
   ];
 
