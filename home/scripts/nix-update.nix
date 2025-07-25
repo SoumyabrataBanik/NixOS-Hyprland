@@ -1,82 +1,82 @@
 { pkgs, ... }:
 
 {
-    home.file = {
-        ".local/bin/nix-update" = {
-            executable = true;
+  home.file = {
+    ".local/bin/nix-update" = {
+      executable = true;
 
-            text = ''
+      text = ''
 
-                set -e
+        set -e
 
-                read -p "Do you want to start upgrading your system right now? (y/N) " -n 1 -r REPLY
+        read -p "Do you want to start upgrading your system right now? (y/N) " -n 1 -r REPLY
 
-                case "$REPLY" in
-                    [yY])
-                        ;;
-                    *)
-                        echo "Update aborted."
-                        exit 0
-                        ;;
-                esac
-                
-                FLAKE_DIR=/home/hiskingisdone/.dotfiles
+        case "$REPLY" in
+            [yY])
+                ;;
+            *)
+                echo "Update aborted."
+                exit 0
+                ;;
+        esac
 
-                echo
-                echo "<------------STARTING THE UPGRADE PROCESS------------>"
-                echo
+        FLAKE_DIR=/home/hiskingisdone/.dotfiles
 
-                echo "> Switching to '$FLAKE_DIR'..."
-                cd "$FLAKE_DIR"
+        echo
+        echo "<------------STARTING THE UPGRADE PROCESS------------>"
+        echo
 
-                if ! git diff --quiet; then
-                    echo "Unstaged Changes. Please commit or stash them first." >&2
-                    exit 1
-                fi
+        echo "> Switching to '$FLAKE_DIR'..."
+        cd "$FLAKE_DIR"
 
-                echo "> Updating flake inputs..."
-                nix flake update
+        if ! git diff --quiet; then
+            echo "Unstaged Changes. Please commit or stash them first." >&2
+            exit 1
+        fi
 
-                if git diff --quiet flake.lock; then
-                    echo " 󰄲 No updates found. Your system is already up to date."
-                    exit 0
-                fi
+        echo "> Updating flake inputs..."
+        nix flake update
 
-                #echo "> The Following inputs have been updated:"
-                #git diff --stat flake.lock
+        if git diff --quiet flake.lock; then
+            echo " 󰄲 No updates found. Your system is already up to date."
+            exit 0
+        fi
 
-                echo
-                read -p "Do you want to proceed with the system rebuild? (y/N) " -n 1 -r REPLY
-                echo
+        #echo "> The Following inputs have been updated:"
+        #git diff --stat flake.lock
 
-                case "$REPLY" in
-                    [yY])
-                        echo "> Proceeding with the rebuild..."
-                        ;;
-                    *)
-                        echo "Abort Requested. The flake.lock file has been updated but the system has not been rebuilt."
-                        echo "You can revert the pending changes with: git restore flake.lock"
-                        exit 1
-                        ;;
-                esac
+        echo
+        read -p "Do you want to proceed with the system rebuild? (y/N) " -n 1 -r REPLY
+        echo
 
-                echo "> Rebuilding the system..."
-                sudo nixos-rebuild switch --flake . && home-manager switch --flake .
+        case "$REPLY" in
+            [yY])
+                echo "> Proceeding with the rebuild..."
+                ;;
+            *)
+                echo "Abort Requested. The flake.lock file has been updated but the system has not been rebuilt."
+                echo "You can revert the pending changes with: git restore flake.lock"
+                exit 1
+                ;;
+        esac
 
-                current_generation=$(nixos-rebuild list-generations | grep "(current)" | awk '{print $1}')
+        echo "> Rebuilding the system..."
+        sudo nixos-rebuild switch --flake . && home-manager switch --flake .
 
-                echo "> Committing flake.lock"
-                git add flake.lock
-                git commit -m "chore: update flake inputs (generation $current_generation)"
+        current_generation=$(sudo nix-env -p /nix/var/nix/profiles/system --list-generations | grep "(current)" | awk '{print $1}')
 
-                echo " 󰄲 System upgrade complete and committed!"
+        echo "> Committing flake.lock"
+        git add flake.lock
+        git commit -m "chore: update flake inputs (generation $current_generation)"
 
-                echo
-                echo "Moving back to previous directory!"
-                echo
+        echo " 󰄲 System upgrade complete and committed!"
 
-                cd -
-            '';
-        };
+        echo
+        echo "Moving back to previous directory!"
+        echo
+
+        cd -
+      '';
     };
+  };
 }
