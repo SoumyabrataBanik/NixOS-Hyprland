@@ -21,7 +21,8 @@ local servers = {
 	"tailwindcss",
 	"eslint",
 	"bashls",
-	"pylsp",
+	--"pylsp",
+	"pyright",
 	"marksman",
 	"emmet_ls",
 	"nil_ls",
@@ -38,14 +39,14 @@ for _, server in ipairs(servers) do
 		}
 	elseif server == "clangd" then
 		server_opts.cmd = { "clangd", "--fallback-style=webkit" }
-	elseif server == "pylsp" then
-		server_opts.settings = {
-			pylsp = {
-				plugins = {
-					pycodestyle = { maxLineLength = 200, indentSize = 4 },
-				},
-			},
-		}
+	--elseif server == "pylsp" then
+	--	server_opts.settings = {
+	--		pylsp = {
+	--			plugins = {
+	--				pycodestyle = { maxLineLength = 200, indentSize = 4 },
+	--			},
+	--		},
+	--	}
 	elseif server == "emmet_ls" then
 		server_opts.filetypes = { "css", "html", "javascript", "typescriptreact", "javascriptreact" }
 	elseif server == "ts_ls" then

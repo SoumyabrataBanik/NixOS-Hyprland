@@ -1,8 +1,4 @@
-{ pkgs, pkgs-unstable, ... }:
-
-let
-  configDir = ../config;
-in
+{ pkgs-unstable, ... }:
 
 {
   programs.neovim = {
@@ -41,7 +37,6 @@ in
       render-markdown-nvim
       nvim-ts-autotag
       undotree
-      lazy-nvim
       lualine-nvim
       nvim-treesitter.withAllGrammars
       trouble-nvim
@@ -54,11 +49,14 @@ in
       gopls
       jdt-language-server
       clang-tools
+      gcc
+      zig
       vscode-langservers-extracted
       tailwindcss-language-server
       eslint
       bash-language-server
-      python313Packages.python-lsp-server
+      #python313Packages.python-lsp-server
+      pyright
       marksman
       emmet-ls
       nil
