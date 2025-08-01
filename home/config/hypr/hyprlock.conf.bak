@@ -1,0 +1,104 @@
+############
+# Hyprlock #
+# ##########
+
+source = ~/.config/hypr/themes/Urban_Nocturne.conf
+
+general {
+    hide_cursor = true
+}
+
+auth {
+    fingerprint:enabled = true
+}
+
+background {
+    monitor = 
+    path = ~/.dotfiles/lock-screen/lockscreen_1.png
+    #blur_passes = 1
+    #blur_size = 7
+    #noise = 0.0117
+    #vibrancy = 0.1696
+}
+
+#Day
+label {
+    monitor =
+    text = cmd[update:30000] echo "$(date +"%A")"
+    text_align = center
+    color = rgba($cursorfe)
+    font_size = 90
+    font_family = MonaspiceXe Nerd Font
+    font_weight = 900
+    rotate = 0 
+    position = -600, 450
+    halign = center
+    valign = center
+}
+
+#Date
+label {
+    monitor =
+    text = cmd[update:30000] echo "$(date +"%d/%m/%Y")"
+    text_align = center
+    color = rgba($color12fe)
+    font_size = 40
+    font_family = MonaspiceXe Nerd Font
+    rotate = 0 
+    position = -600, 350
+    halign = center
+    valign = center
+}
+
+# Time
+label {
+    monitor =
+    text = $TIME
+    text_align = center
+    color = rgba($color9fe)
+    font_size = 100
+    font_family = MonaspiceXe Nerd Font
+    rotate = 0 
+    position = -600, 100
+    halign = center
+    valign = center
+}
+
+label {
+    monitor = 
+    text = Welcome Back!
+    text_align = center
+    color = rgba($color15fe)
+    font_size = 25
+    font_family = MonaspiceXe Nerd Font
+    position = -600, -10
+    halign = center
+    valign = center
+}
+
+label {
+    monitor =
+    text = Owned By HisKingIsDone
+    text_align = center 
+    color = rgba($color15fe)
+    font_size = 15
+    font_family = MonaspiceXe Nerd Font
+    rotate = 0
+
+    position = 800, -500
+    halign = center
+    valign = center
+}
+
+input-field {
+    monitor =
+    size = 50, 50
+    outer_color = rgba($background00)
+    inner_color = rgba($color11ab)
+    placeholder_text = 
+    fade_on_empty = 1000
+    hide_input = true
+    hide_input_base_color = rgba($color2ff)
+    rounding = -1
+    position = 900, 500
+}

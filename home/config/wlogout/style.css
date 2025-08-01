@@ -1,0 +1,80 @@
+@import "/home/hiskingisdone/.config/wlogout/themes/Urban-Nocturne/colors.css";
+
+* {
+    background-image: none;
+    box-shadow: none;
+}
+
+window {
+    background-color: @background;
+}
+
+button {
+    border-radius: 50px;
+    /*text-decoration-color: @color5;*/
+    color: @foreground;
+    background-color: @color8;
+    /*border: 3px solid transparent;*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20%;
+    margin: 10px;
+}
+
+button:active,
+button:hover,
+button:focus,
+{
+border: 10px solid @color5;
+background: @color9;
+color: @foreground;
+}
+
+/*button:hover {
+  background-color: @color9;
+}
+
+button:focus {
+  /*background-color: @;*/
+/*color: @color5;
+  border: 10px solid @color5;
+}
+
+button:focus:hover {
+  color: @color6;
+  background-color: @color9;
+}*/
+
+#lock {
+    background-image: image(url("/home/hiskingisdone/.config/wlogout/icons/lock.png"));
+}
+
+#logout {
+    background-image: image(url("/home/hiskingisdone/.config/wlogout/icons/logout.png"));
+}
+
+#suspend {
+    background-image: image(url("/home/hiskingisdone/.config/wlogout/icons/suspend.png"));
+}
+
+#hibernate {
+    background-image: image(url("/home/hiskingisdone/.config/wlogout/icons/hibernate.png"));
+}
+
+#shutdown {
+    background-image: image(url("/home/hiskingisdone/.config/wlogout/icons/shutdown.png"));
+}
+
+#reboot {
+    background-image: image(url("/home/hiskingisdone/.config/wlogout/icons/reboot.png"));
+}
+
+#lock:hover,
+#logout:hover,
+#suspend:hover,
+#hibernate:hover,
+#shutdown:hover,
+#reboot:hover {
+    /*background-color: rgba(74, 20, 140, 0.5);*/
+    /*color: @;*/
+}

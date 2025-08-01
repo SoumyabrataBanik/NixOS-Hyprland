@@ -1,0 +1,9 @@
+require("hover").setup({
+	init = function()
+		require("hover.providers.lsp")
+		require("hover.providers.diagnostic")
+	end,
+})
+                                                                          
+-- Keymaps
+vim.keymap.set("n", "K", require("hover").hover, { desc = "hover.nvim" })

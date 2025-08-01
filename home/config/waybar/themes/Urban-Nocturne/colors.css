@@ -1,0 +1,28 @@
+@define-color background #1A1922;
+@define-color foreground #C4C0B5;
+
+@define-color color0 #1A1922;
+/* Black */
+@define-color color7 #C4C0B5;
+/* White */
+
+/* --- Accent Colors --- */
+
+@define-color color1 #3B4868;
+/* Deep blue from the cityscape silhouette */
+@define-color color2 #545A75;
+/* Muted, grayish blue from the clouds */
+@define-color color3 #C75D56;
+/* The prominent warm yellow from a lit window */
+@define-color color4 #D99F65;
+/* A deeper, more orange glow from another window */
+@define-color color5 #80A7C2;
+/* A brighter, distant blue light from the background skyscrapers */
+@define-color color6 #EAE3D4;
+/* The brightest window glow for critical alerts */
+
+/* --- Greys --- */
+@define-color color8 #504D59;
+/* A mid-tone purple/grey from the sky */
+@define-color color9 #3B4868;
+/* Using the deep blue as a highlight color */
