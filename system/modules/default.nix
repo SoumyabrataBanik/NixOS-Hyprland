@@ -2,7 +2,6 @@
 
 {
   imports = [
-    ./autocpufreq.nix
     ./boot.nix
     ./hardware.nix
     ./hyprland.nix
@@ -14,6 +13,7 @@
     ./services.nix
     ./stable-packages.nix
     ./time.nix
+    ./tlp.nix
     ./users.nix
     ./unstable-packages.nix
     ./zsh.nix
