@@ -10,7 +10,7 @@ let
 
     # System Upgrade
     rebuild = "sudo nixos-rebuild switch --flake ~/.dotfiles";
-    homeRebuild = "home-manager switch --flake ~/.dotfiles";
+    homeRebuild = "home-manager switch --flake ~/.dotfiles -b backup";
     fullRebuild = "sudo nixos-rebuild switch --flake ~/.dotfiles && home-manager switch --flake ~/.dotfiles";
 
     # Tmuxifier Aliases

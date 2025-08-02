@@ -11,9 +11,9 @@
     ./neovim.nix
     ./open-webui.nix
     ./programs.nix
-    ./rclone.nix
+    # ./rclone.nix
     ./services.nix
-    ./sops-nix.nix
+    # ./sops-nix.nix
     ./tmux.nix
     ./zsh.nix
   ];
