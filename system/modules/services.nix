@@ -1,4 +1,4 @@
-{ config, ... }:
+{ config, pkgs, ... }:
 
 {
 
@@ -6,13 +6,23 @@
 
     dbus.enable = true;
 
-    xserver = {
+    #xserver = {
+    #  enable = false;
+    #  displayManager.gdm.enable = true;
+    #  desktopManager.gnome.enable = true;
+    #  xkb = {
+    #    layout = "us";
+    #    variant = "";
+    #  };
+    #};
+
+    greetd = {
       enable = true;
-      displayManager.gdm.enable = true;
-      desktopManager.gnome.enable = true;
-      xkb = {
-        layout = "us";
-        variant = "";
+      settings = {
+        default_session = {
+          command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --cmd Hyprland";
+          user = "greeter";
+        };
       };
     };
 

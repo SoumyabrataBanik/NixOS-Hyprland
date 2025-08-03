@@ -8,7 +8,7 @@
     QT_SCALE_FACTOR = "1";
     MOZ_ENABLE_WAYLAND = "1";
     SDL_VIDEODRIVER = "wayland";
-    QT_QPA_PLATFORM = "wayland-egl";
+    QT_QPA_PLATFORM = "wayland";
     WLR_NO_HARDWARE_CURSORS = "1";
     XDG_CURRENT_DESKTOP = "Hyprland";
     XDG_SESSION_DESKTOP = "Hyprland";

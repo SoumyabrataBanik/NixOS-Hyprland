@@ -12,12 +12,12 @@ let
     ${coreutils}/bin/mkdir -p "$LOCK_DIR"
     ${coreutils}/bin/rm -rf "$LOCK_DIR"/*
     ${Hyprshot}/bin/hyprshot -s -f 1.png -o "$LOCK_DIR" -m output -m eDP-1
-    ${coreutils}/bin/sleep 0.5
   '';
 
   screen-suspend = pkgs.writeShellScriptBin "screen-suspend" ''
     #!${pkgs.runtimeShell}
     ${take-screenshot}/bin/take-screenshot
+    ${coreutils}/bin/sleep 1
     ${Hyprlock}/bin/hyprlock &
     ${coreutils}/bin/sleep 1
     ${Systemd}/bin/systemctl suspend
@@ -26,6 +26,7 @@ let
   lock-screen = pkgs.writeShellScriptBin "lock-screen" ''
     #!${pkgs.runtimeShell}
     ${take-screenshot}/bin/take-screenshot
+    ${coreutils}/bin/sleep 1
     ${Hyprlock}/bin/hyprlock
   '';
 in
