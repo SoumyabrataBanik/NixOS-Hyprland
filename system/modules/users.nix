@@ -1,16 +1,21 @@
 { config, pkgs, ... }:
 
 {
-    
-    users.users.hiskingisdone = {
-        isNormalUser = true;
-        description = "HisKingIsDone";
-        extraGroups = [ "networkmanager" "wheel" ];
-        shell = pkgs.zsh;
-        useDefaultShell = true;
-    };
 
-    environment.localBinInPath = true;
+  users.users.hiskingisdone = {
+    isNormalUser = true;
+    description = "HisKingIsDone";
+    extraGroups = [
+      "networkmanager"
+      "wheel"
+      "render"
+      "video"
+    ];
+    shell = pkgs.zsh;
+    useDefaultShell = true;
+  };
 
-    environment.homeBinInPath = true;
+  environment.localBinInPath = true;
+
+  environment.homeBinInPath = true;
 }

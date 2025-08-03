@@ -6,6 +6,7 @@
     ./hardware.nix
     ./hyprland.nix
     ./internationalization.nix
+    ./keyd.nix
     ./networking.nix
     ./nixsettings.nix
     ./programs.nix
