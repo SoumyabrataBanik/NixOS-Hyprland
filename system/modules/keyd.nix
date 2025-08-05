@@ -10,7 +10,7 @@
         settings = {
           main = {
             esc = "noop";
-            rightalt = "esc";
+            rightcontrol = "esc";
           };
         };
       };
