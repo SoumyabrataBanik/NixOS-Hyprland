@@ -28,6 +28,14 @@
     gtk4.extraConfig = {
       gtk-application-prefer-dark-theme = 1;
     };
+  };
 
+  dconf.settings = {
+    "org.gnome.desktop.interface" = {
+      color-scheme = "prefer-dark";
+      gtk-theme = "Dracula";
+      icon-theme = "Papirus-Dark";
+      cursor-theme = "Simp1e-Mix-Light";
+    };
   };
 }
