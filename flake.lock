@@ -405,11 +405,11 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1754801560,
-        "narHash": "sha256-yveNgGXF3EAsOeZtiiHGfKSX/8xKEYB3mMKNnlYM24s=",
+        "lastModified": 1754838505,
+        "narHash": "sha256-adTcMStVeuzaAu9fwFFG8w70WHksmfbGZodf1+eZizQ=",
         "owner": "SoumyabrataBanik",
         "repo": "open-webui-flake",
-        "rev": "81df066337c0e602a4a27208553a0ded5bb3b824",
+        "rev": "cfafb247759312cefe7e3747b04c7f4f2a99a006",
         "type": "github"
       },
       "original": {
