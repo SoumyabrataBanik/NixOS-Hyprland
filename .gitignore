@@ -1,3 +1,4 @@
 wallpapers/
 .sops.yaml
 home/hiskingisdone/hyprland/
+system/hardware-configuration.nix

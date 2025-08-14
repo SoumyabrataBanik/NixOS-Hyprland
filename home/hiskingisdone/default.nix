@@ -13,6 +13,7 @@
     ./programs.nix
     # ./rclone.nix
     ./services.nix
+    ./sillytavern.nix
     # ./sops-nix.nix
     ./tmux.nix
     ./zsh.nix

@@ -34,6 +34,10 @@
     open-webui = {
       url = "github:SoumyabrataBanik/open-webui-flake";
     };
+
+    sillytavern = {
+      url = "github:SoumyabrataBanik/SillyTavern-Flake";
+    };
   };
 
   outputs =
@@ -43,6 +47,7 @@
       nixpkgs-unstable,
       home-manager,
       sops-nix,
+      sillytavern,
       ...
     }@inputs:
     let
