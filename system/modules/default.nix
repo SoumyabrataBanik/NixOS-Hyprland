@@ -2,6 +2,8 @@
 
 {
   imports = [
+    ./asus.nix
+    ./battery-notifier.nix
     ./boot.nix
     ./hardware.nix
     ./hyprland.nix
@@ -14,7 +16,7 @@
     ./services.nix
     ./stable-packages.nix
     ./time.nix
-    ./tlp.nix
+    # ./tlp.nix
     ./users.nix
     ./unstable-packages.nix
     ./zsh.nix

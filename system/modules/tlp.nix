@@ -22,6 +22,7 @@
       CPU_MIN_PERF_ON_BAT = 0;
       CPU_MAX_PERF_ON_BAT = 50;
 
+      START_CHARGE_THRESH_BAT0 = 99;
       STOP_CHARGE_THRESH_BAT0 = 100;
 
       PLATFORM_PROFILE_ON_AC = "performance";

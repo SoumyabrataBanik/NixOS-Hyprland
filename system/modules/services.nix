@@ -45,7 +45,5 @@
       powerKey = "ignore";
       powerKeyLongPress = "poweroff";
     };
-
-    asusd.enable = true;
   };
 }

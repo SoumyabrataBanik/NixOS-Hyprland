@@ -13,4 +13,8 @@
   home.sessionVariables = {
     SILLYTAVERN_DATAROOT = "${config.home.homeDirectory}/.sillytavern";
   };
+
+  programs.zsh.shellAliases = {
+    st = "sillytavern";
+  };
 }
