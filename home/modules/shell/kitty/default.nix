@@ -5,7 +5,7 @@
     enable = true;
     package = pkgs-unstable.kitty;
     shellIntegration.enableZshIntegration = true;
-    themeFile = "dracula";
+    themeFile = "Dracula";
     font = {
       size = 12;
       name = "MonaspiceXe Nerd Font Mono";

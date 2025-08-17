@@ -3,6 +3,7 @@
 {
   imports = [
     ./alacritty
+    ./fastfetch
     ./ghostty
     ./kitty
     ./starship
