@@ -20,13 +20,13 @@
       CPU_MIN_PERF_ON_AC = 10;
       CPU_MAX_PERF_ON_AC = 100;
       CPU_MIN_PERF_ON_BAT = 0;
-      CPU_MAX_PERF_ON_BAT = 50;
+      CPU_MAX_PERF_ON_BAT = 60;
 
       START_CHARGE_THRESH_BAT0 = 99;
       STOP_CHARGE_THRESH_BAT0 = 100;
 
-      PLATFORM_PROFILE_ON_AC = "performance";
-      PLATFORM_PROFILE_ON_BAT = "low-power";
+      #PLATFORM_PROFILE_ON_AC = "performance";
+      #PLATFORM_PROFILE_ON_BAT = "low-power";
 
       RUNTIME_PM_ON_AC = "on";
       RUNTIME_PM_ON_BAT = "on";

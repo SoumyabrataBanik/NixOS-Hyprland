@@ -10,7 +10,7 @@ in
       recursive = true;
     };
     ".config/kitty".source = "${configDir}/kitty";
-    ".config/hypr".source = "${configDir}/hypr";
+    # ".config/hypr".source = "${configDir}/hypr";
     ".config/waybar".source = "${configDir}/waybar";
     ".config/starship.toml".source = "${configDir}/starship.toml";
     ".config/fastfetch".source = "${configDir}/fastfetch";

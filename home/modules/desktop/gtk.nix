@@ -6,11 +6,6 @@
 
     enable = true;
 
-    cursorTheme = {
-      name = "Simp1e-Mix-Light";
-      package = pkgs-unstable.simp1e-cursors;
-    };
-
     theme = {
       name = "Dracula";
       package = pkgs-unstable.dracula-theme;
@@ -35,7 +30,6 @@
       color-scheme = "prefer-dark";
       gtk-theme = "Dracula";
       icon-theme = "Papirus-Dark";
-      cursor-theme = "Simp1e-Mix-Light";
     };
   };
 }

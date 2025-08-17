@@ -1,0 +1,14 @@
+{ pkgs, ... }:
+
+{
+  wayland.windowManager.hyprland.settings = {
+    general = {
+      gaps_in = 2;
+      gaps_out = 2;
+      border_size = 3;
+
+      resize_on_border = false;
+      layout = "master";
+    };
+  };
+}
