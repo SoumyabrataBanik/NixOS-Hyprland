@@ -3,13 +3,13 @@ let
 in
 {
   home.file = {
-    ".config/alacritty".source = "${configDir}/alacritty";
+    #".config/alacritty".source = "${configDir}/alacritty";
     # ".config/nvim".source = "${configDir}/nvim";
     #".config/nvim" = {
     #  source = "${configDir}/nvim-nix";
     #  recursive = true;
     #};
-    ".config/kitty".source = "${configDir}/kitty";
+    #".config/kitty".source = "${configDir}/kitty";
     # ".config/hypr".source = "${configDir}/hypr";
     ".config/waybar".source = "${configDir}/waybar";
     ".config/starship.toml".source = "${configDir}/starship.toml";
