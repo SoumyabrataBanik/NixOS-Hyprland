@@ -1,11 +1,12 @@
-{ ... }:
+{ config, pkgs-unstable, ... }:
 let
-  theme = import ./themes/Urban_Nocturne.nix { };
-  palette = theme.palette;
+  palette = config.theme.palette;
 in
 {
   programs.hyprlock = {
     enable = true;
+
+    package = pkgs-unstable.hyprlock;
 
     settings = {
       general = {
@@ -13,7 +14,6 @@ in
       };
       auth = {
         "fingerprint:enabled" = true;
-        "pam:enabled" = false;
       };
 
       background = {

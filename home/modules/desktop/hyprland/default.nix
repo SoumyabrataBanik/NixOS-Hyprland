@@ -1,4 +1,4 @@
-{ ... }:
+{ pkgs-unstable, ... }:
 
 {
   imports = [
@@ -14,7 +14,13 @@
     ./layerrules.nix
     ./misc.nix
     ./monitors.nix
+    ./services.nix
+    ./theme.nix
     ./windowrules.nix
-    ./themes/Urban_Nocturne.nix
   ];
+
+  wayland.windowManager.hyprland = {
+    enable = true;
+    package = pkgs-unstable.hyprland;
+  };
 }
