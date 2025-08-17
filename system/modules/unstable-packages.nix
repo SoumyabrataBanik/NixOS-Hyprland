@@ -1,7 +1,7 @@
 { pkgs-unstable, ... }:
 
 {
-environment.systemPackages = with pkgs-unstable; [
+  environment.systemPackages = with pkgs-unstable; [
     kitty
     alacritty
     neovim
@@ -10,5 +10,5 @@ environment.systemPackages = with pkgs-unstable; [
     ghostty
     onlyoffice-desktopeditors
     zathura
-];
+  ];
 }
