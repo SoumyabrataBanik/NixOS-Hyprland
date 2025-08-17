@@ -1,9 +1,12 @@
-{ config, pkgs, ... }:
+{ config, pkgs-unstable, ... }:
 
 {
-    environment.systemPackages = with pkgs; [
-        oh-my-zsh
-    ];
+  environment.systemPackages = with pkgs-unstable; [
+    oh-my-zsh
+  ];
 
-    programs.zsh.enable = true;
+  programs.zsh = {
+    enable = true;
+    package = pkgs-unstable.zsh;
+  };
 }
