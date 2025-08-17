@@ -1,5 +1,3 @@
-{ ... }:
-
 {
   palette = {
     background = "1A1922";
@@ -29,5 +27,4 @@
     color7 = "C4C0B5";
     color15 = "EAE3D4";
   };
-
 }
