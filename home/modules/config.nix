@@ -18,7 +18,7 @@ in
     ".config/yazi".source = "${configDir}/yazi";
     # ".config/tmux".source = "${configDir}/tmux";
     ".config/wlogout".source = "${configDir}/wlogout";
-    ".config/zathura".source = "${configDir}/zathura";
+    #".config/zathura".source = "${configDir}/zathura";
     ".config/swaync".source = "${configDir}/swaync";
   };
 }
