@@ -10,7 +10,7 @@
       theme = "Dracula+";
       font-family = "0xProto Nerd Font Mono";
       font-size = 12;
-      background-opacity = 0.6;
+      background-opacity = 0.7;
       background-blur = 5;
       title = " ";
       keybind = [
@@ -30,8 +30,8 @@
         "ctrl+5=goto_tab:5"
       ];
       confirm-close-surface = false;
-      window-padding-x = 5;
-      window-padding-y = 5;
+      window-padding-x = 10;
+      window-padding-y = "10, 2";
     };
   };
 }
