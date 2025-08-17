@@ -32,7 +32,7 @@ in
   programs = {
 
     # Enable Starship
-    starship.enable = true;
+    #starship.enable = true;
 
     # Enable ZSH
     zsh = {
@@ -45,9 +45,9 @@ in
         theme = "robbyrussell";
       };
       shellAliases = myAliases;
-      initContent = ''
-        eval "$(starship init zsh)"
-      '';
+      #initContent = ''
+      #  eval "$(starship init zsh)"
+      #'';
     };
   };
 }
