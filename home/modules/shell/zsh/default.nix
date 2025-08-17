@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ ... }:
 let
   myAliases = {
     c = "clear";
@@ -25,16 +25,7 @@ let
   };
 in
 {
-  home.packages = with pkgs; [
-    starship
-  ];
-
   programs = {
-
-    # Enable Starship
-    #starship.enable = true;
-
-    # Enable ZSH
     zsh = {
       enable = true;
       syntaxHighlighting.enable = true;
@@ -45,9 +36,6 @@ in
         theme = "robbyrussell";
       };
       shellAliases = myAliases;
-      #initContent = ''
-      #  eval "$(starship init zsh)"
-      #'';
     };
   };
 }
