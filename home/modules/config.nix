@@ -5,10 +5,10 @@ in
   home.file = {
     ".config/alacritty".source = "${configDir}/alacritty";
     # ".config/nvim".source = "${configDir}/nvim";
-    ".config/nvim" = {
-      source = "${configDir}/nvim-nix";
-      recursive = true;
-    };
+    #".config/nvim" = {
+    #  source = "${configDir}/nvim-nix";
+    #  recursive = true;
+    #};
     ".config/kitty".source = "${configDir}/kitty";
     # ".config/hypr".source = "${configDir}/hypr";
     ".config/waybar".source = "${configDir}/waybar";

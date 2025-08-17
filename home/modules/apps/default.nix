@@ -3,7 +3,7 @@
 {
   imports = [
     ./git.nix
-    ./neovim.nix
+    ./neovim
     ./open-webui.nix
     ./sillytavern.nix
   ];
