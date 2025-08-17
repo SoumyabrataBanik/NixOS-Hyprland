@@ -30,6 +30,8 @@
         "ctrl+5=goto_tab:5"
       ];
       confirm-close-surface = false;
+      window-padding-x = 5;
+      window-padding-y = 5;
     };
   };
 }
