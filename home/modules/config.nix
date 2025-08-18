@@ -19,6 +19,6 @@ in
     # ".config/tmux".source = "${configDir}/tmux";
     ".config/wlogout".source = "${configDir}/wlogout";
     #".config/zathura".source = "${configDir}/zathura";
-    ".config/swaync".source = "${configDir}/swaync";
+    #".config/swaync".source = "${configDir}/swaync";
   };
 }
