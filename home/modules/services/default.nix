@@ -3,5 +3,6 @@
 {
   imports = [
     ./hm.nix
+    ./swaync
   ];
 }

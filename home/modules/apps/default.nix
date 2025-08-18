@@ -6,5 +6,6 @@
     ./neovim
     ./open-webui.nix
     ./sillytavern.nix
+    ./zathura
   ];
 }
