@@ -28,6 +28,10 @@
         "ctrl+3=goto_tab:3"
         "ctrl+4=goto_tab:4"
         "ctrl+5=goto_tab:5"
+        "super+ctrl+shift+h=resize_split:left,10"
+        "super+ctrl+shift+l=resize_split:right,10"
+        "super+ctrl+shift+k=resize_split:up,10"
+        "super+ctrl+shift+j=resize_split:down,10"
       ];
       confirm-close-surface = false;
       window-padding-x = 10;
