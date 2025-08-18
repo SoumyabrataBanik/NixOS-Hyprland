@@ -7,5 +7,5 @@
     readOnly = true;
   };
 
-  config.theme = import ./themes/Urban_Nocturne.nix;
+  config.theme = import ./themes/Nix_Nordic.nix;
 }

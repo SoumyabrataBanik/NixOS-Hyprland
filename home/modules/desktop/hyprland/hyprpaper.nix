@@ -6,10 +6,10 @@
     settings = {
       splash = false;
       preload = [
-        "~/.dotfiles/wallpapers/wallpaper_3.png"
+        "~/.dotfiles/wallpapers/wallpaper_4.png"
       ];
       wallpaper = [
-        ",~/.dotfiles/wallpapers/wallpaper_3.png"
+        ",~/.dotfiles/wallpapers/wallpaper_4.png"
       ];
     };
   };
