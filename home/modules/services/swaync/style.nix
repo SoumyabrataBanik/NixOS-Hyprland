@@ -17,9 +17,9 @@ in
 
     .floating-notifications.background .notification-row .notification-background {
         border-radius: 0.5rem;
-        background-color: #${palette.background};
-        color: #${palette.foreground};
-        border: 1px solid #${palette.color12};
+        background-color: #191724;
+        color: #e0def4;
+        border: 1px solid #6e6a86;
     }
 
     .floating-notifications.background .notification-row .notification-background .notification {
@@ -28,18 +28,18 @@ in
     }
 
     .floating-notifications.background .notification-row .notification-background .notification.critical {
-        border: 1px solid #${palette.color9};
+        border: 1px solid #eb6f92;
     }
 
     .floating-notifications.background .notification-row .notification-background .notification .notification-content .summary {
         margin: 0.5rem;
-        color: #${palette.foreground};
+        color: #e0def4;
         font-weight: bold;
     }
 
     .floating-notifications.background .notification-row .notification-background .notification .notification-content .body {
         margin: 0.5rem;
-        color: #${palette.color8};
+        color: #908caa;
     }
 
     .floating-notifications.background .notification-row .notification-background .notification>*:last-child>* {
@@ -48,29 +48,29 @@ in
 
     .floating-notifications.background .notification-row .notification-background .notification>*:last-child>* .notification-action {
         border-radius: 0.5rem;
-        color: #${palette.foreground};
-        background-color: #${palette.background};
-        border: 1px solid #${palette.color12};
+        color: #e0def4;
+        background-color: #1f1d2e;
+        border: 1px solid #6e6a86;
     }
 
     .floating-notifications.background .notification-row .notification-background .notification>*:last-child>* .notification-action:hover {
-        background-color: #${palette.background};
+        background-color: #26233a;
     }
 
     .floating-notifications.background .notification-row .notification-background .notification>*:last-child>* .notification-action:active {
-        background-color: #${palette.cursor};
+        background-color: #6e6a86;
     }
 
     .floating-notifications.background .notification-row .notification-background .close-button {
         margin: 0.5rem;
         padding: 0.25rem;
         border-radius: 0.5rem;
-        color: #${palette.foreground};
-        background-color: #${palette.color1};
+        color: #e0def4;
+        background-color: #eb6f92;
     }
 
     .floating-notifications.background .notification-row .notification-background .close-button:hover {
-        color: #${palette.color0};
+        color: #191724;
     }
 
     .floating-notifications.background .notification-row .notification-background .close-button:active {
@@ -80,39 +80,39 @@ in
     .control-center {
         border-radius: 0.5rem;
         margin: 1rem;
-        background-color: #${palette.background};
-        color: #${palette.foreground};
+        background-color: #191724;
+        color: #e0def4;
         padding: 1rem;
-        border: 1px solid #${palette.color12};
+        border: 1px solid #6e6a86;
     }
 
     .control-center .widget-title {
-        color: #${palette.foreground};
+        color: #ebbcba;
         font-weight: bold;
     }
 
     .control-center .widget-title button {
         border-radius: 0.5rem;
-        color: #${palette.foreground};
-        background-color: #${palette.background};
-        border: 1px solid #${palette.color12};
+        color: #e0def4;
+        background-color: #1f1d2e;
+        border: 1px solid #6e6a86;
         padding: 0.5rem;
     }
 
     .control-center .widget-title button:hover {
-        background-color: #${palette.background};
+        background-color: #26233a;
     }
 
     .control-center .widget-title button:active {
-        background-color: #${palette.background};
+        background-color: #6e6a86;
     }
 
     .control-center .notification-row .notification-background {
         border-radius: 0.5rem;
         margin: 0.5rem 0;
-        background-color: #${palette.background};
-        color: #${palette.foreground};
-        border: 1px solid #${palette.color12};
+        background-color: #1f1d2e;
+        color: #e0def4;
+        border: 1px solid #6e6a86;
     }
 
     .control-center .notification-row .notification-background .notification {
@@ -125,18 +125,18 @@ in
     }
 
     .control-center .notification-row .notification-background .notification .notification-content {
-        color: #${palette.foreground};
+        color: #e0def4;
     }
 
     .control-center .notification-row .notification-background .notification .notification-content .summary {
         margin: 0.5rem;
-        color: #${palette.foreground};
+        color: #cdd6f4;
         font-weight: bold;
     }
 
     .control-center .notification-row .notification-background .notification .notification-content .body {
         margin: 0.5rem;
-        color: #${palette.foreground};
+        color: #908caa;
     }
 
     .control-center .notification-row .notification-background .notification>*:last-child>* {
@@ -145,25 +145,25 @@ in
 
     .control-center .notification-row .notification-background .notification>*:last-child>* .notification-action {
         border-radius: 0.5rem;
-        color: #${palette.foreground};
+        color: #e0def4;
         background-color: #1f1d2e;
-        border: 1px solid #${palette.color12};
+        border: 1px solid #6e6a86;
     }
 
     .control-center .notification-row .notification-background .notification>*:last-child>* .notification-action:hover {
-        background-color: #${palette.background};
+        background-color: #26233a;
     }
 
     .control-center .notification-row .notification-background .notification>*:last-child>* .notification-action:active {
-        background-color: #${palette.background};
+        background-color: #6e6a86;
     }
 
     .control-center .notification-row .notification-background .close-button {
         margin: 0.5rem;
         padding: 0.25rem;
         border-radius: 0.5rem;
-        color: #${palette.foreground};
-        background-color: #${palette.color1};
+        color: #e0def4;
+        background-color: #eb6f92;
     }
 
     .control-center .notification-row .notification-background .close-button:hover {

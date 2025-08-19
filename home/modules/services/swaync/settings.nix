@@ -7,6 +7,7 @@
     layer = "overlay";
     control-center-layer = "top";
     layer-shell = true;
+    layer-shell-cover-screen = true;
     cssPriority = "application";
     control-center-margin-top = 0;
     control-center-margin-bottom = 0;
@@ -21,6 +22,7 @@
     timeout-low = 5;
     timeout-critical = 0;
     fit-to-screen = true;
+    relative-timestamps = true;
     control-center-width = 500;
     control-center-height = 600;
     notification-window-width = 500;
