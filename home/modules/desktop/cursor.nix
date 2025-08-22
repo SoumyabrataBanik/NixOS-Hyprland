@@ -3,23 +3,23 @@
 {
   gtk = {
     cursorTheme = {
-      name = "Simp1e-Mix-Light";
-      package = pkgs-unstable.simp1e-cursors;
+      name = "Vimix-white-cursors";
+      package = pkgs-unstable.vimix-cursors;
     };
   };
 
   dconf.settings = {
     "org.gnome.desktop.interface" = {
-      cursor-theme = "Simp1e-Mix-Light";
+      cursor-theme = "Vimix-white-cursors";
     };
   };
 
   wayland.windowManager.hyprland.settings = {
     env = [
       "XCURSOR_SIZE,23"
-      "XCURSOR_THEME,Simp1e-Mix-Light"
+      "XCURSOR_THEME,Vimix-white-cursors"
       "HYPRCURSOR_SIZE,23"
-      "HYPRCURSOR_THEME,Simp1e-Mix-Light"
+      "HYPRCURSOR_THEME,Vimix-white-cursors"
     ];
   };
 }
