@@ -7,6 +7,5 @@
 
   programs.zsh = {
     enable = true;
-    package = pkgs-unstable.zsh;
   };
 }
