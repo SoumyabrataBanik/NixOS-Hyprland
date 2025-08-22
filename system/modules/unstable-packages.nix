@@ -10,5 +10,6 @@
     ghostty
     onlyoffice-desktopeditors
     zathura
+    brave
   ];
 }
