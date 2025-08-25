@@ -3,23 +3,23 @@
 {
   gtk = {
     cursorTheme = {
-      name = "Vimix-white-cursors";
-      package = pkgs-unstable.vimix-cursors;
+      name = "Bibata-Original-Classic";
+      package = pkgs-unstable.bibata-cursors;
     };
   };
 
   dconf.settings = {
     "org.gnome.desktop.interface" = {
-      cursor-theme = "Vimix-white-cursors";
+      cursor-theme = "Bibata-Original-Classic";
     };
   };
 
   wayland.windowManager.hyprland.settings = {
     env = [
-      "XCURSOR_SIZE,23"
-      "XCURSOR_THEME,Vimix-white-cursors"
-      "HYPRCURSOR_SIZE,23"
-      "HYPRCURSOR_THEME,Vimix-white-cursors"
+      "XCURSOR_SIZE,24"
+      "XCURSOR_THEME,Bibata-Original-Classic"
+      "HYPRCURSOR_SIZE,24"
+      "HYPRCURSOR_THEME,Bibata-Original-Classic"
     ];
   };
 }
