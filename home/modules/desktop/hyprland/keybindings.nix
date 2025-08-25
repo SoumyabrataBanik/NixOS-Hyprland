@@ -9,8 +9,8 @@
     "$secTerminal" = "kitty";
     "$fileManager" = "thunar";
     "$menu" = "rofi";
-    "$browser" = "zen";
-    "$secBrowser" = "firefox";
+    "$browser" = "brave";
+    "$secBrowser" = "zen";
 
     binde = [
       # Lower or Raise sound by 1
@@ -47,8 +47,8 @@
       "$mainMod SHIFT, J, togglesplit" # Dwindle; No idea what it does
       "$mainMod SHIFT, F, fullscreen" # Fullscreen mode
 
-      "$mainMod, B, exec, waybar-toggle" # Toggle wayland
-      "$mainMod SHIFT, B, exec, waybar-reload" # Reload wayland
+      #"$mainMod, B, exec, waybar-toggle" # Toggle wayland
+      #"$mainMod SHIFT, B, exec, waybar-reload" # Reload wayland
 
       # Lock screen, reboot, poweroff
       "$mainMod, M, exec, wlogout" # Call wlogout menu
@@ -104,9 +104,9 @@
       "$mainMod, mouse_up, workspace, e-1"
 
       # Open installed applications
-      "$mainMod, Z, exec, $browser"
-      "$mainMod SHIFT, Z, exec, $browser --private-window"
-      "$mainMod, F, exec, $secBrowser"
+      "$mainMod, B, exec, $browser"
+      "$mainMod SHIFT, B, exec, $browser --private-window"
+      "$mainMod, Z, exec, $secBrowser"
 
       # Screenshot
       ", Print, exec, hyprshot -zm region --clipboard-only"
