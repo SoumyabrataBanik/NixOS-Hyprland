@@ -493,11 +493,11 @@
         "nixpkgs": "nixpkgs_3"
       },
       "locked": {
-        "lastModified": 1755164295,
-        "narHash": "sha256-44opqnsMbscYX93lCirRP4cf/VTk3J4EqerJXgL2Kno=",
+        "lastModified": 1756143325,
+        "narHash": "sha256-GiuoFNl9Mcx/3HdTUv5KIKIZM7dob3V1zvb8gTuDhXM=",
         "owner": "SoumyabrataBanik",
         "repo": "SillyTavern-Flake",
-        "rev": "a17843f7c6acd4b857d98fc15c4d5cd47f166657",
+        "rev": "f04d948894dfa9899f71ac4e2499356410693b9e",
         "type": "github"
       },
       "original": {
