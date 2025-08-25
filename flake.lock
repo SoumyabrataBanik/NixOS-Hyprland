@@ -439,11 +439,11 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1755845047,
-        "narHash": "sha256-CbyTzvLZAR7MgT0E2nmyiq8CGevwraziLWe4Sp9agdE=",
+        "lastModified": 1755875423,
+        "narHash": "sha256-4FeHv9ZQBL+I9oT9Ykf6G7dP0kOqzTfi/RS9G4K3Vvo=",
         "owner": "SoumyabrataBanik",
         "repo": "open-webui-flake",
-        "rev": "69c0f47ef1ceb3aa693aa4d13c36833be4c4ad67",
+        "rev": "c30540ed984a86571e95a065ac1c2a60bed303b0",
         "type": "github"
       },
       "original": {
