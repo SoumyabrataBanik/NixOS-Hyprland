@@ -7,7 +7,7 @@
 
 {
   home.packages = [
-    inputs.sillytavern.packages.${pkgs.system}.sillytavern
+    inputs.sillytavern.packages.${pkgs.system}.default
   ];
 
   home.sessionVariables = {
