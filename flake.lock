@@ -439,11 +439,11 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1755875423,
-        "narHash": "sha256-4FeHv9ZQBL+I9oT9Ykf6G7dP0kOqzTfi/RS9G4K3Vvo=",
+        "lastModified": 1756388103,
+        "narHash": "sha256-jjQnonzGB3iMtHQuhLaHrTxBXwEgj+QvIdPtBXF9Gzo=",
         "owner": "SoumyabrataBanik",
         "repo": "open-webui-flake",
-        "rev": "c30540ed984a86571e95a065ac1c2a60bed303b0",
+        "rev": "b833b57f6f5926b569319f747148faf5827342b5",
         "type": "github"
       },
       "original": {
@@ -604,11 +604,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1754854927,
-        "narHash": "sha256-MS1+3beBcK2KW7HP2hLHdkQOaqsaJ3EYNDztVKNWyMw=",
+        "lastModified": 1756299051,
+        "narHash": "sha256-nH3GTzRNS7Ve5c7XGPzkA5H271QuU5+oVi+VChTdW0Q=",
         "owner": "SoumyabrataBanik",
         "repo": "flake-zen-browser",
-        "rev": "4a3c7548240facb22c8a5438a0c48d1b53c490cb",
+        "rev": "f14f6c0821bedb07e0797523ed2b5d02ab5baefc",
         "type": "github"
       },
       "original": {

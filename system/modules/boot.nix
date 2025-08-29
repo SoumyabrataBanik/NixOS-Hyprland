@@ -4,7 +4,10 @@
   boot = {
     kernelPackages = pkgs.linuxPackages_latest;
 
-    kernelParams = [ "atkbd.reset" ];
+    kernelParams = [
+      "atkbd.reset"
+      "amd_pstate=disabled"
+    ];
 
     loader = {
       efi.canTouchEfiVariables = true;
