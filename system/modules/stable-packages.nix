@@ -27,5 +27,6 @@
     unzip
     tmux
     acpi
+    feh
   ];
 }
