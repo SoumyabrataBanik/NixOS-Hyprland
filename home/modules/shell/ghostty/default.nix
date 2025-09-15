@@ -8,7 +8,7 @@
 
     settings = {
       theme = "Dracula+";
-      font-family = "0xProto Nerd Font Mono";
+      font-family = "JetBrainsMonoNL Nerd Font";
       font-size = 12;
       background-opacity = 0.7;
       background-blur = 5;
