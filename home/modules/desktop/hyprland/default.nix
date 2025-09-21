@@ -7,6 +7,7 @@
     ./envvariables.nix
     ./execs.nix
     ./general.nix
+    ./gestures.nix
     ./hyprlock.nix
     ./hyprpaper.nix
     ./input.nix

@@ -11,7 +11,7 @@
     hyprlock
     hypridle
     hyprshot
-    rofi-wayland
+    rofi
     wlogout
     wl-clipboard
     dunst

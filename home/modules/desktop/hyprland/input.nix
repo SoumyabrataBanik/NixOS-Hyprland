@@ -7,14 +7,11 @@
       follow_mouse = 1;
       sensitivity = 1;
       touchpad = {
+        disable_while_typing = true;
         natural_scroll = true;
       };
       numlock_by_default = true;
       accel_profile = "adaptive";
-    };
-
-    gestures = {
-      workspace_swipe = true;
     };
 
     device = {
