@@ -604,11 +604,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1757339821,
-        "narHash": "sha256-jusGkcw5gvccjQhQwXBXelzUXukd/h1PqjQvzsMdZr4=",
+        "lastModified": 1758597353,
+        "narHash": "sha256-kAT5UYXhNacztrRscUEfjitYuZ5020mpNG2jnH1PBRc=",
         "owner": "SoumyabrataBanik",
         "repo": "flake-zen-browser",
-        "rev": "49fe031cc0b6f2f33c834ecc2c722aa5a18757e0",
+        "rev": "630e8800b59e17d3271da651a246606171c76fe9",
         "type": "github"
       },
       "original": {
